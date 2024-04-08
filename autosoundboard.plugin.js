@@ -8,20 +8,34 @@
  */
 
 module.exports = class AutoSoundboard {
+    /**
+     * Initializes the plugin when started.
+     */
     start() {
         this.registerCSS();
     }
 
+    /**
+     * Handles plugin shutdown.
+     */
     stop() {
     }
 
+    /**
+     * Retrieves plugin settings.
+     * @returns {Object} Plugin settings.
+     */
     loadSettings() {
         const streamDeckWS = BdApi.loadData("autosoundboard", "streamDeckWS");
         return { streamDeckWS: streamDeckWS };
     }
 
+    /**
+     * Constructs the settings panel interface.
+     * @returns {HTMLElement} Settings panel.
+     */
     getSettingsPanel() {
-        this.loadSettings();
+        this.loadSettings(); // Load settings
 
         const SettingsPanel = document.createElement("div");
         SettingsPanel.classList.add = "autosb-settings";
@@ -93,6 +107,9 @@ module.exports = class AutoSoundboard {
         return SettingsPanel;
     }
 
+    /**
+     * Registers CSS styles for the plugin.
+     */
     registerCSS() {
         BdApi.DOM.addStyle("AutoSoundboard", `
             .autosb-settings * {
