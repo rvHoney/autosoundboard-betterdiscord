@@ -1,6 +1,6 @@
 # AutoSoundboard BetterDiscord plugin repo
 **⚠️ A Stream Deck is required for this plugin to work.**  
-This extension allows you to play soundboards automatically when you join a Discord room without having a nitro subscription.  
+This extension allows you to play soundboards automatically when you join a Discord voice channel without having a nitro subscription.  
 With that I am also accepting PR's for new services and also updates to the current ones.  
 If you are submitting PR's try and keep names and titles the same.
 ## How to install the plugin
