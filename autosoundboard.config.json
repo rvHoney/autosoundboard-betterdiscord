@@ -1,5 +1,5 @@
 {
     "streamDeckWS": "ws://127.0.0.1:25025",
-    "isInVC": true,
-    "isSoundAlreadyPlayed": true
+    "isInVC": false,
+    "isSoundAlreadyPlayed": false
 }
